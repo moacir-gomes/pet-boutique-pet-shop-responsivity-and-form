@@ -1,0 +1,178 @@
+*{
+    font-size:22px;
+}
+
+form{
+    width:100%;
+}
+
+fieldset{
+    width:60%;
+    margin-left:10px;
+    display:flex;
+    flex-direction:column;
+    text-align:start;
+}
+
+fieldset legend{
+    font-size:28px;
+    font-weight:900;
+    margin-bottom:20px;
+}
+
+fieldset label{
+    margin-bottom:10px;
+    margin-left:10px;
+}
+
+label,
+input{
+    margin-bottom:20px;
+}
+
+h4{
+    margin-bottom:15px;
+    padding:5px 10px;
+}
+
+label{
+    color:darkblue;
+}
+
+input{
+    color:darkgreen;
+}
+
+input::placeholder{
+color:orangered;
+}
+
+.nome-cliente{
+    width:90%;
+}
+
+.cpf-nascimento-telefone{
+    display:flex;
+    flex-direction:column;
+}
+
+.cpf,
+.telephone{
+    width:190px;
+}
+
+.date-of-birth{
+    width:180px;
+}
+
+.email{
+    width:300px;
+}
+
+.password{
+    width:310px;
+}
+
+.address{
+    width:90%;
+}
+
+.residence-number-district-div{
+    display:flex;
+    flex-direction:column;
+}
+
+.residence-number{
+    width:90px;
+}
+
+.district{
+    width:75%;
+}
+
+.city-state-div{
+    display:flex;
+    flex-direction:column;
+}
+
+
+.city{
+    width:70%;
+}
+
+.state{
+    width:36px;
+}
+
+.reference-point-cep-div{
+    display:flex;
+    flex-direction:column;
+}
+
+.reference-point{
+    width:80%;
+}
+
+.cep-8-numbers-div{
+    display:flex;
+}
+
+.cep-first-5{
+    width:80px;
+}
+
+.cep-last-3{
+    width:50px;
+}
+
+.animal-type,
+.doenca{
+    display:flex;
+}
+
+.animal-type,
+.doenca,
+.ofertas,
+.termos,
+.medica{
+    margin:10px;
+}
+
+.animal-type label,
+.doenca label,
+.ofertas label,
+.termos label,
+.medica label{
+   margin:10px;
+}
+
+.animal-type input,
+.ofertas input,
+.doenca input,
+.ofertas input,
+.termos input,
+.medica input{
+    margin:0;
+}
+
+/* Button */
+.btn-repply{
+    width:100px;
+    margin:10px 0 20px 10px;
+    padding:5px 10px;
+    text-align:center;
+    border:2px solid green;
+    border-radius:10px;
+    font-size:20px;
+    font-weight:900;
+    background-color:blue;
+    color:white;
+    transition:1.5s;
+}
+
+.btn-repply:hover{
+    background-color:black;
+    color:aqua;
+    transition:0.5s;
+}
+

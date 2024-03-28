@@ -1,0 +1,116 @@
+@media only screen and (max-width: 425px){
+    *{
+        list-style-type:none;
+    }
+
+    h2{
+        font-size:26px;
+    }
+
+    h3{
+        font-size:26px;
+    }
+
+    .header-top{
+       height:35vh;
+       display:flex;
+       flex-direction:column;
+    }
+
+    .top-logo{
+        position:absolute;
+        top:0;
+        left:0;
+    }
+
+    .logo{
+        width:230px;
+    }
+
+    .menu{
+        padding:10px;
+        position:absolute;
+        left:0;
+        top:100px;
+    }
+
+    .menu ul{
+        display:flex;
+        flex-direction:column;
+        gap:1px;
+    }
+
+    .menu li{
+        margin:5px 20px;
+        font-size:24px;
+    }
+
+    .limited-width{
+        width:100%;
+        padding:0 10px;
+    }
+
+        /* A classe "service-link-disabled" foi criada para 
+        desabilitar o link que está no cabeçalho e que 
+        leva para a seção "service". Este link não estará 
+        disponível para telas de até 425px. O motivo é que em
+        telas de até 425px a seção "service" está logo abaixo do
+        cabeçalho.  */
+    .service-link-disabled{
+        display:none;
+    }   
+
+        /* First section
+            Banner section */
+    .banner{
+        display:none;
+    }
+
+        /* Linha divisória que só irá aparecer nas telas 
+                de até 425px */
+    .divider-425{
+        display:block;
+    }
+
+        /* Second section 
+            Services section */
+    .images{
+        display:none;
+    } 
+    
+        /* Third section
+            Purple-background section */
+    .purple-background{        
+        height:16vh;
+    }
+        
+        /* 4th section
+            Brands section - Style.css file has stylization
+            for all media queries in this section */
+    
+      
+     /* 5th section
+            Second-banner section */
+   .second-banner{
+    height:25vh;
+    display:none;
+}
+
+        /* 7th section
+            Map section */
+    .map{
+        width:380px;
+        aspect-ratio: 16 / 9;
+    }
+
+        /* Whatsapp icon on the right bottom */
+    .fixed-whats-icon img{
+        width:48;
+        height:48px; 
+        right:-5px;
+        bottom:-5px;
+    }
+}
+
+
+        

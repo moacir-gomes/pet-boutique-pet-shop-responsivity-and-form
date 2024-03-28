@@ -1,0 +1,368 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    width:100%;
+}
+
+header{
+    width:100%;
+    height:50%;
+    background-color:white;
+    color:#341933;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-around;
+}
+
+header div{
+    width:320px;
+    position:absolute;
+    left:10px;
+}
+
+.header-top{
+    height:11vh;
+}
+
+.logo{
+    width:230px;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+
+header h1{
+    margin-top:10px;
+    color:#341933;
+}
+
+header p{
+    width:300px;
+    margin-top:50px;
+    font-size:20px;
+    color:#341933;
+}
+
+.paw{
+    width:20px;
+    height:20px; 
+    margin-top:10px; 
+}
+
+.menu{
+    width:60%;
+    text-align:left;
+    font-weight:bold;
+}
+
+.menu ul{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.menu li:hover{
+    color:red;
+}
+
+.limited-width{
+    width:100%;
+}
+        
+.menu li:hover::before{
+    content:"";
+    width:15px;
+    height:20px;
+    margin-left:-20px;
+    background-image:url("../assets/patas.png");
+    background-size:100% 100%;
+    position:absolute;
+    background-repeat:no-repeat;
+}
+
+.menu a{
+    color:red;
+   
+}
+
+.menu a:hover{
+    color:blue;
+    transition:1s;
+}
+
+.header-top li{
+    list-style-type:none;
+}
+
+.menu ul{
+    display:flex;    
+}
+
+main{
+    text-align:center;
+}
+
+h1{
+    font-size:36px;
+}
+
+h2{
+    font-size:32px;
+    color:white;
+}
+
+h3{
+    font-size:28px;
+    color:#341933;
+    margin:20px 0;
+}
+
+li,
+p{
+    font-size:22px;
+    margin:20px;
+}
+
+        /* A classe "service-link-disabled" foi criada para 
+            desabilitar o link que está no cabeçalho e que 
+            leva para a seção service. Este link não estará 
+        disponível para telas de até 425px. O motivo é que em
+        telas de até 425px a seção "service" está logo abaixo 
+        do cabeçalho. */ 
+
+                /* First section
+                    Banner section */
+.banner{
+    width:100%;
+    height:60vh;
+    background-image:url("../assets/banner-topo.jpg");
+    background-attachment:fixed;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.filter{
+    background-color:#d3d3d396;
+    color:#341933;
+    width:65%;
+    height:300px;
+    border-radius:20px;
+    padding:10px 5px;
+}
+
+.filter h1{
+    margin-bottom:60px;
+    font-size:50px;
+}
+
+.filter a{
+    font-size:35px;
+    font-weight:900;
+    padding:5px 10px;
+    border-radius:20px;
+    border:3px solid black;
+    background-color:green;
+    color:white;
+    transition:0.5s;
+}
+
+.filter a:hover{
+    font-size:40px;
+    transition:0.5s;
+    background-color:white;
+    padding:5px 10px;
+    border-radius:20px;
+    border:3px solid black;
+    color:blue;
+}
+
+                /* Second section 
+                Service section */
+.service{
+    margin:0 auto;   
+}
+
+.squares{
+   padding-left:0px;
+   text-align:justify;
+}
+
+.squares span:first-of-type{
+    color:darkblue;
+    font-style:italic;
+    font-weight:800;
+}
+
+.images{
+    width:100%;
+    display:flex;
+    gap:10px;
+    font-size:20px;
+    font-weight:900;
+    margin-bottom:20px;
+}
+
+figcaption{
+    font-size:25px;
+}
+
+.images figure{
+    width:20%;
+}
+
+.images img{
+    width:90%;
+}
+
+            /* 3rd section
+                Purple-background section */
+.purple-background{
+    background-color:#341933;
+    height:10vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.link-top a{
+    color:yellow;
+}
+
+.facebook:hover,
+.instagram:hover,
+.whatsapp:hover{
+    opacity:0.5;
+}
+
+.limited-width{
+    width:80%;
+    margin:0 auto;
+}
+
+                /* 4th section
+                    Brands section */
+.brands{
+   display:flex;
+   flex-direction:column;
+}
+
+.brands img{
+    width:70%;
+}
+
+                /* 5th section
+                    Second-banner section */
+.second-banner{
+    width:100%;
+    height:40vh;
+    background-image:url("../assets/cachorro-filhote-na-agua.gif");
+    background-size:100% 100%;
+    background-attachment:fixed;
+}
+
+                /* 6th section
+                    Contact */
+.contact img{
+    width:30px;
+    margin:15px 0 0 30px;
+}
+
+
+                /* 7th section */
+.map{
+    max-width:80%;
+    aspect-ratio: 16 / 9;
+}
+
+.divider,
+.divider-425{
+    height:5px;
+    margin-top:30px;
+    background:linear-gradient(to right, blue, green, yellow);
+}
+
+.divider-425{
+    display:none;
+}
+
+                /* Footer */
+footer{
+    padding:5px;
+    font-size:22px;
+    text-align:center;
+}
+
+.divider-2{
+    height:5px;
+    background:linear-gradient(to right, yellow, green, blue);
+}
+
+.closed{
+    font-weight:900;
+    color:red;
+}
+
+.open{
+    color:darkgreen;
+    font-weight:900;
+}
+
+.btn-top{
+    text-align:center;
+    margin-top:30px;
+}
+
+.moacir{
+    color:yellow;
+    font-weight:600;
+    padding:2px 7px;
+    transition:0.5s;
+}
+
+.moacir:hover{
+    color:white;
+    background-color:black;
+    transition:0.5s;
+    padding:2px 7px;
+    border-radius:10px;
+}
+
+.phone-number{
+    color:blue;
+    font-weight:800;
+}
+
+.developed-by{
+    background-color:#341933;
+    text-align:center;
+    padding:2px;
+}
+
+.developed-by p{
+    color:white
+}
+
+/* Whatsapp no canto inferior direito */
+
+.fixed-whats-icon img{
+    position:fixed;
+    right:0;
+    bottom:0;
+}

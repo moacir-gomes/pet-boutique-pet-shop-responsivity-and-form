@@ -1,0 +1,81 @@
+@media only screen and (min-width: 769px) 
+and (max-width: 1024px){
+    .header-top{
+        height:21vh;
+    }
+
+    h2{
+        font-size:32px;
+    }
+
+    h3{
+        font-size:32px;
+    }
+
+    .limited-width{
+        padding:0 40px;
+    }
+
+    .top-logo{
+        position:absolute;
+        top:0;
+        left:0;
+    }
+
+    .menu{
+        width:91%;
+        padding:5px;
+        margin-top:10px;
+        position:absolute;
+        display:flex;
+        left:0;
+        top:90px;
+    }
+
+    .menu ul{
+        display:flex;
+        gap:2px;
+    }
+
+    /* First section
+        Banner section */
+    .banner{
+        height:50vh;
+    }
+
+    .filter{
+        height:220px;
+    }
+    
+    .filter h1{
+        margin-bottom:22px;
+        font-size:36px;
+    }
+
+    /* Second section 
+        Service section */
+    .images figcaption{
+        font-size:20px;
+    }            
+
+    /* 3rd section
+        Purple-background section */
+    .purple-background{
+        height:18vh; 
+    }
+
+    /* Fourth section
+        Brands section - Style.css file has stylization
+            for all media queries in this section */
+    
+ /* Whatsapp icon on the right bottom */
+ .fixed-whats-icon img{
+    right:0;
+    bottom:-5px;
+    width:90px;
+    height:90px; 
+    }
+}
+
+
+   

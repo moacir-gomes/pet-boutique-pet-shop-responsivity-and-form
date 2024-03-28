@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Pet shop webpage">
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0">
+        <meta name="robots" content="index, nofollow">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+            <!-- Until 425px screens -->
+        <link rel="stylesheet" href="css/media-425.css" type="text/css">
+            <!-- From 426px to 768px screens --> 
+        <link rel="stylesheet" href="css/media-426-to-768.css" 
+            type="text/css">
+            <!-- From 769px to 1024px screens --> 
+        <link rel="stylesheet" href="css/media-769-to-1024.css" 
+            type="text/css">
+            <!-- From 1025px to 1440px screens -->
+        <link rel="stylesheet" href="css\media-1025-to-1440.css"
+            type="text/css">
+        <title>Pet Boutique pet shop</title>
+    </head>
+    <body>
+        <header class="header-top" id="top">
+            <div class="top-logo">
+                <div class="logo">
+                    <img class="paw" src="assets/patas.png" alt="Logo" 
+                    title="Logo">
+                    <h1>Pet Boutique</h1>
+                </div>
+                <p>Estilo e elegância para cães e gatos</p>
+            </div>
+            <nav class="menu">
+                <ul>
+                <!-- A classe "service-link-disabled" foi criada para 
+                    desabilitar o link que está no cabeçalho e que 
+                    leva para a seção service.Este link não estará 
+                disponível para telas de até 425px. O motivo é que em
+                telas de até 425px a seção "service" está logo abaixo 
+                do cabeçalho. -->
+                    <li><a class="service-link-disabled"
+                        href="#services" alt="Serviços">Serviços</a></li>
+                    <li><a href="#brand" alt="Marcas">Marcas</a></li>
+                    <li><a href="#map" alt="Localização">Localização</a></li>
+                    <li><a href="form.html" alt="Cadastro" target="_blank">Cadastro</a></li>
+                    <li><a href="#opening-hours" alt="Horário de funcionamento">
+                        Horário de funcionamento</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- First section
+                    Banner section -->
+            <section class="banner">
+                <div class="filter">
+                    <h1>Tenha o melhor tratamento para seu parceiro</h1>    
+                    <a class="phone-number" alt="Whatsapp" title="whatsapp"  
+                        href="https://wa.me/+5582999205093/?text=PET%20BOUTIQUE%20-%20Atendimento%20-%20Segunda%20a%20sexta:%2006h%20às%2012h%20/%2013h%20às%2019h30%20---%20Sábado:%2006h%20às%2012h%20/%2013h%20às%2017h.%20---%20Feriados%20municipais%20e%20estaduais%2006h%20às%2012h%20/%2013h%20às%2019h30.%20---%20Domingos%20e%20feriados%20nacionais:%20FECHADO"
+                        target="_blank">
+                        Fale conosco</a>
+                </div>
+            </section>
+            <!-- Linha divisória que só irá aparecer nas telas 
+            de até 425px -->
+            <div class="divider limited-width divider-425"></div>
+
+            <!-- Second section 
+                Service section -->
+            <section id="services" class="service limited-width">
+                <h3>Alguns dos nossos serviços</h3>
+                <ul type="square" class="squares">
+                    <li><span>Banho & Tosa:</span>
+                        Banho, hidratação, tosa higiênica, tosa 
+                        cachorros de diversas raças e outros serviços 
+                        feitos por profissionais parceiros especialistas 
+                        no assunto.
+                    </li>
+
+                    <li><span>Veterinário 24h: </span>A saúde do seu melhor amigo em boas mãos. Consultas, exames e vacinas com médicos-veterinários parceiros.
+                    </li>
+
+                    <li><span>Dog Walker: </span>Sem tempo para sair com seu cachorro? Além de caminhadas, os passeadores parceiros Pet Anjo ainda corrigem comportamentos e ensinam comandos básicos.
+                    </li>
+
+                    <li><span>Creche Pet: </span>A creche para cachorro é uma solução personalizada para quem não quer deixar o pet sozinho em casa durante o dia. Brincadeiras, cuidados e muito carinho.
+                    </li>
+                    
+                    <li><span>Produtos para seu pet: </span>Explore nossa loja repleta de produtos premium para animais de estimação. De alimentos saudáveis a brinquedos divertidos e acessórios elegantes.
+                    </li>
+                </ul>
+
+                <!-- 1st figure -->
+                <div class="images">
+                    <figure>
+                        <img src="assets/banho.png" alt="Banho" title="Banho">
+                        <figcaption>Banho</figcaption>
+                    </figure>
+
+                    <!-- 2nd figure -->
+                    <figure>
+                        <img src="assets/veterinario.png" alt="Veterinário" title="Veterinário">
+                        <figcaption>Veterinário</figcaption>
+                    </figure>
+
+                    <!-- 3rd figure -->
+                    <figure>
+                        <img src="assets/dog-walker.png" alt="Dog Walker" title="Dog Walker">
+                        <figcaption>Dog Walker</figcaption>
+                    </figure>
+
+                    <!-- 4th figure -->
+                    <figure>
+                        <img src="assets/creche.png" alt="Creche Pet" title="Creche Pet">
+                        <figcaption>Creche Pet</figcaption>
+                    </figure>
+
+                    <!-- 5th figure -->
+                    <figure>
+                        <img src="assets/loja.png" alt="Produtos Pet" title="Produtos Pet">
+                        <figcaption>Produtos Pet</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+                    <!-- 3rd section
+                        Purple-background section -->
+            <section class="purple-background link-top">
+                <div class="limited-width">
+                    <h2>Aqui na <span><a href="#top">Pet Boutique</a>
+                    </span>somos apaixonados pelo que fazemos.</h2>
+                    <div class="contact">
+                        <!-- Facebook link -->
+                        <a class="facebook" href="https://www.facebook.com" target="_blank">
+                            <img src="assets/social-medias/facebook-svgrepo-com.png" 
+                            alt="Facebook" title="Facebook">
+                        </a>
+                        <!-- Instagram link -->
+                        <a class="instagram" href="https://www.instagram.com" target="_blank">
+                            <img src="assets/social-medias/instagram-svgrepo-com.png" 
+                            alt="Instagram" title="Instagram">
+                        </a>
+                        <!-- Whatsapp -->
+                        <a class="whatsapp" href="https://wa.me/+5582999205093/?text=PET%20BOUTIQUE%20-%20Atendimento%20-%20Segunda%20a%20sexta:%2006h%20às%2012h%20/%2013h%20às%2019h30%20---%20Sábado:%2006h%20às%2012h%20/%2013h%20às%2017h.%20---%20Feriados%20municipais%20e%20estaduais%2006h%20às%2012h%20/%2013h%20às%2019h30.%20---%20Domingos%20e%20feriados%20nacionais:%20FECHADO" 
+                            target="_blank">
+                            <img src="assets/social-medias/whatsapp-svgrepo-com.png" 
+                            alt="Whatsapp" title="Whatsapp">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+                    <!-- Fourth section
+                         Brands section -->
+            <section id="brand" class="limited-width brands">
+                <h3>Nossas principais marcas</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <!-- First table line -->
+                            <td>
+                                <img src="assets/brands/AlfaPet.png" 
+                                alt="Alfa pet">
+                            </td>
+                            
+                            <td>
+                                <img src="assets/brands/BichinhoChic.png" alt="Bichinho Chic"
+                                title="Bichinho Chic">
+                            </td>
+                            
+                            <td>
+                                <img src="assets/brands/Boehringer.png" 
+                                alt="Boehringer Ingelheim" title="Boehringer Ingelheim">
+                            </td>
+                            
+                            <td>
+                                <img src="assets/brands/Inataa.png" 
+                                alt="Inataa" title="Inataa">
+                            </td>
+                        </tr>
+
+                        <!-- Second table line -->
+                        <tr>
+                            <td>
+                                <img src="assets/brands/Biofresh.png" 
+                                alt="Biofresh" title="Biofresh">
+                            </td>
+
+                            <td>
+                                <img src="assets/brands/Bravecto.png" 
+                                alt="Bravecto" title="Bravecto">
+                            </td>
+
+                            <td>
+                                <img src="assets/brands/NexgardSpectra.png" 
+                                alt="NexGard" title="NexGard">
+                            </td>
+
+                            <td>
+                                <img src="assets/brands/Pickorruchos.png" 
+                                alt="Pickorruchos" title="Pickorruchos">
+                            </td>
+                        </tr>
+
+                        <!-- Third table line -->
+                        <tr>
+                            <td>
+                                <img src="assets/brands/PapaPets.png" 
+                                alt="PapaPets" title="PapaPets">
+                            </td>
+
+                            <td>
+                                <img src="assets/brands/royalcanini.png" 
+                                alt="Royal Canin" title="Royal Canin">
+                            </td>
+
+                            <td>
+                                <img src="assets/brands/saopet.png" 
+                                alt="São Pet" title="São Pet">
+                            </td>
+
+                            <td>
+                                <img src="assets/brands/exopets.png" 
+                                alt="ExoPets" title="ExoPets">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+                <!-- 5th section
+                    Second-banner section -->
+            <section class="second-banner">
+            </section>
+
+                <!-- Sixth section -->
+            <section class="purple-background link-top">
+                <div class="limited-width">
+                    <h2>Na <span><a href="#top">Pet Boutique</a>
+                    </span> você encontra estilo e elegância para 
+                    cães e gatos.</h2>
+                    <div class="contact">
+                        <!-- Facebook link -->
+                        <a class="facebook" href="https://www.facebook.com" 
+                        target="_blank">
+                            <img src="assets/social-medias/facebook-svgrepo-com.png" alt="Facebook" title="Facebook">
+                        </a>
+                        <!-- Instagram link -->
+                        <a class="instagram" href="https://www.instagram.com" 
+                        target="_blank">
+                            <img src="assets/social-medias/instagram-svgrepo-com.png" alt="Instagram" title="Instagram">
+                        </a>
+                        <!-- Whatsapp -->
+                        <a class="whatsapp" href="https://wa.me/+5582999205093/?text=PET%20BOUTIQUE%20-%20Atendimento%20-%20Segunda%20a%20sexta:%2006h%20às%2012h%20/%2013h%20às%2019h30%20---%20Sábado:%2006h%20às%2012h%20/%2013h%20às%2017h.%20---%20Feriados%20municipais%20e%20estaduais%2006h%20às%2012h%20/%2013h%20às%2019h30.%20---%20Domingos%20e%20feriados%20nacionais:%20FECHADO" 
+                        target="_blank">
+                            <img src="assets/social-medias/whatsapp-svgrepo-com.png" alt="Phone number" title="Phone number">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seventh section
+                    Map section -->
+            <section id="map" class="limited-width">
+                <h3>Onde estamos</h3>
+                <p>Se ficou interessado em nossos serviços 
+                    venha nos conhecer.
+                </p>
+                <div>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.3306736980926!2d-43.370290123762594!3d-22.974864740309464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda2ec9620a2d%3A0x5c8412e8969fa343!2sDevMedia!5e0!3m2!1spt-BR!2sbr!4v1708915551302!5m2!1spt-BR!2sbr" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+        </main>
+                <!-- Linha divisória -->
+        <div class="divider limited-width"></div>
+                
+                <!-- Footer -->
+        <footer class="limited-width">
+            <p>Razão social: PET BOUTIQUE LTDA.</p>
+            <p>Av. Zé da Silva, 102 - Edifício Pablo Gomes - 2º andar - loja 22 - Centro - Maceió - AL</p>
+            <p class="phone-number">Whatsapp: (82)987654321</p>
+            <p id="opening-hours">Horário de funcionamento:</p>
+            <p>Segunda a sexta: 06h às 12h / 13h às 19h30</p>
+            <p>Sábado: 06h às 12h / 13h às 17h</p>
+            <p class="open">Feriados municipais e estaduais: 06h às 12h / 13h às 19h30</p>
+            <p class="closed">Domingo e feriados nacionais: Fechado</p>
+            <p>CNPJ: 22.333.333/0001-22</p>
+            <p>PET BOUTIQUE&copy; - Todos os direitos reservados.</p>
+        </footer>
+
+                <!-- Linha divisória -->
+        <div class="divider-2 limited-width"></div>
+                
+                <!-- Botão topo -->
+        <section class="btn-top limited-width">
+            <a href="#top" title="Topo da página"><img src="assets/pet-boutique.png"
+                 alt="Button top"></a>
+        </section>
+
+                <!-- Developed by -->
+        <section class="developed-by developed-width">
+            <p>Desenvolvido por <a class="moacir" href="https://github.com/moacir-gomes?tab=repositories"
+                target="_blank" title="Veja meu GitHub">Moacir Gomes
+           </a></p>
+        </section>
+
+        <!-- Contato do Whatsapp no canto inferior direito -->
+        <section class="fixed-whats-icon">
+            <a href="https://wa.me/+5582999205093/?text=PET%20BOUTIQUE%20-%20Atendimento%20-%20Segunda%20a%20sexta:%2006h%20às%2012h%20/%2013h%20às%2019h30%20---%20Sábado:%2006h%20às%2012h%20/%2013h%20às%2017h.%20---%20Feriados%20municipais%20e%20estaduais%2006h%20às%2012h%20/%2013h%20às%2019h30.%20---%20Domingos%20e%20feriados%20nacionais:%20FECHADO" 
+                target="_blank">
+                <img src="assets/whatsapp-logo-128x128_resized.png" alt="Whatsapp" 
+                title="Whatsapp"></a>
+        </section>
+    </body>
+</html>

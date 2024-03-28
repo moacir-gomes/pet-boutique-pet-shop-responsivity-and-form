@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Cadastro 
+            da Pet Boutique Pet shop">
+        <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+        <meta name="robots" content="index, nofollow">
+        <link rel="stylesheet" href="css/form.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" 
+            type="text/css">
+        <title>Pet Boutique - Cadastro de cliente</title>
+    </head>
+    <body>
+        <header class="header-top">
+            <div class="top-logo">
+                <div class="logo">
+                    <img class="paw" src="assets/patas.png" alt="Patas">
+                    <h1>Pet Boutique</h1>
+                </div>
+                <p>Estilo e elegância para cães e gatos</p>
+            </div>
+        </header>
+        <main>
+            <section class="form">
+                <h1>Faça seu cadastro na Pet Boutique Pet shop</h1>
+                <form method="post" action="">
+                    <fieldset>
+                        <legend>Dados pessoais</legend>
+                        <!-- Nome completo -->
+                        <label>Nome completo:</label>
+                        <input class="nome-cliente" type="text" name="nome" required
+                        placeholder="Digite seu nome completo">
+                        <div class="cpf-nascimento-telefone">
+                            <!-- CPF -->
+                            <label>CPF:</label>
+                            <input class="cpf" type="text" placeholder="XXX.XXX.XXX-XX">
+                            <!-- Data de nascimento -->
+                            <label>Data de nascimento:</label>
+                            <input class="date-of-birth" type="date" 
+                            name="date-of-birth" required>
+                            <!-- Telefone -->
+                            <label>Telefone:</label>
+                            <input class="telephone" type="tel" name="phone-number" 
+                            required placeholder="(XX)XXXXX-XXXX">
+                        </div>
+                            <!-- E-mail -->
+                       
+                        <label>E-mail:</label>
+                        <input class="email" type="email" name="email" required 
+                        placeholder="Digite seu e-mail">
+                        <!-- Confirme seu e-mail -->
+                        <label>Confirme seu e-mail:</label>
+                        <input class="email" type="email" required 
+                        placeholder="Digite seu e-mail">
+                        <!-- Senha -->
+                        <label>Crie sua senha:</label>
+                        <input class="password" type="password" minlength="8" maxlength="12" 
+                        placeholder="Senha entre 8 e 12 caracteres">
+                        <!-- Confirme sua senha: -->
+                        <label>Confirme sua senha:</label>
+                        <input class="password" type="password" minlength="8" maxlength="12" 
+                        placeholder="Digite a mesma senha">
+                        <!-- Endereço -->
+                        <label>Endereço:</label>
+                        <input class="address" type="text" required
+                        placeholder="Digite seu endereço">
+                        <div class="residence-number-district-div">
+                            <!-- Número -->
+                            <label>Número:</label>
+                            <input class="residence-number" type="text" required>
+                            <!-- Bairro -->
+                            <label>Bairro:</label>
+                            <input class="district" type="text" name="district" required
+                            placeholder="Nome do seu bairro">
+                        </div>
+                        <div class="city-state-div">
+                            <!-- Cidade -->
+                            <label>Cidade:</label>
+                            <input class="city" type="text" name="city" required 
+                            placeholder="Nome da sua cidade">
+                            <!-- Estado -->
+                            <label>Estado:</label>
+                            <input class="state" type="text" name="state" required maxlength="2" 
+                            placeholder="XX">
+                        </div>
+                        <div class="reference-point-cep-div">
+                            <!-- Ponto de referência -->
+                            <label>Ponto de referência:</label>
+                            <input class="reference-point" type="text" required 
+                            placeholder="Ponto de referência">
+                            <div class="cep-8-numbers-div">
+                                <!-- CEP -->
+                                <label>CEP:</label>
+                                <!-- First 5 CEP numbers -->
+                                <input class="cep-first-5" type="text" 
+                                name="cep-first-5" maxlenght="5" placeholder="XXXXX">
+                                -
+                                <!-- Last 3 CEP numbers -->
+                                <input class="cep-last-3" type="text" name="cep-last-3" 
+                                maxlenght="3" placeholder="XXX">
+                            </div> 
+                        </div>
+                    </fieldset>
+                    <fieldset> 
+                        <legend>Sobre seu(s) pet(s)</legend>
+                        <h4>Seu pet é um:</h4>
+                        <div class="animal-type">
+                                <!-- Gato -->
+                            <input type="radio" id="animal-gato" name="tipo" 
+                            value="gato" required>
+                            <label for="animal-gato">Gato</label>
+                                <!-- Cachorro -->
+                            <input type="radio" id="animal-cachorro" name="tipo" 
+                            value="cachorro">
+                            <label for="animal-cachorro">Cachorro</label>
+                        </div>
+                        <h4>Qual é o nome do seu  pet?</h4>
+                        <input type="text" name="nome-pet" 
+                        placeholder="Digite o nome do seu pet">
+                            <!-- Doença -->
+                        <h4>Seu pet tem alguma doença?</h4>
+                        <div class="doenca">
+                                <!-- Doença sim -->
+                            <input type="radio" id="doenca-sim" name="doenca" required value="doenca-sim">
+                            <label for="doenca-sim">Sim</label>
+                                <!-- Doença não -->
+                            <input type="radio" id="doenca-nao" name="doenca" value="doenca-nao">
+                            <label for="doenca-nao">Não</label>
+                        </div>
+                            <!-- Medicação -->
+                            <h4>Seu pet precisa tomar alguma medicação regularmente?</h4>
+                        <div class="medica">
+                                    <!-- Sim -->
+                            <input type="radio" id="medica-sim" name="medicacao" 
+                            value="medica-sim">
+                            <label for="medica-sim">Sim</label>
+                                    <!-- Não -->
+                            <input type="radio" id="medica-nao" name="medicacao" 
+                            value="medica-nao">
+                            <label for="medica-nao">Não</label>
+                        </div>
+                            <!-- Nome do remédio -->
+                            <h4>Qual é o nome do remédio?</h4>
+                            <input type="text" name="nome-remedio">
+                        <div class="ofertas">
+                                <!-- Ofertas -->
+                            <h4>Você gostaria de receber nossas ofertas no seu e-mail?</h4>
+                                <!-- Ofertas - Sim -->
+                            <input type="radio" id="oferta-sim" name="escolha-oferta" value="sim">
+                            <label for="oferta-sim">Sim</label>
+                                <!-- Ofertas - Não -->
+                            <input type="radio" id="oferta-nao" name="escolha-oferta" value="nao">
+                            <label for="oferta-nao">Não</label>
+                        </div>
+                        <div class="termos">
+                                <!--Termos de uso -->
+                            <input type="checkbox" id="checkbox-termos" name="termos" value="aceito"
+                            required>
+                            <label for="checkbox-termos">Li e aceito os termos de uso.</label>
+                        </div>
+                        <!-- A tag <a> funcionará como a tag <button> pois eu coloquei um link 
+                        para uma página simulando a resposta do back-end. Ou seja, como se, após apertar o botão "Envie"
+                        os dados fossem enviados para o banco de dados e o back-end passasse ao front-end e o resultado 
+                        da confirmação do cadastro fosse a resposta que está na página web form-reppy.html -->
+                        <a class="btn-repply" href="form-repply.html" alt="resposta-formulário">
+                            Envie</a>
+                    </fieldset>     
+                </form>
+            </section>
+        </main>
+            <!-- Developed by -->
+         <section class="developed-by developed-width">
+            <p>Desenvolvido por <a class="moacir" href="https://github.com/moacir-gomes?tab=repositories"
+                target="_blank" title="Veja meu GitHub">Moacir Gomes
+           </a></p>
+        </section>
+    </body>
+</html>
